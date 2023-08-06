@@ -1,0 +1,8 @@
+version: 1
+kind: tensorboard
+environment:
+    node_selector:
+         polyaxon: tensorboards
+build:
+  image: 'tensorflow/tensorflow:1.11.0-py3'
+

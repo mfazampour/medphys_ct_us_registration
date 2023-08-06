@@ -1,0 +1,17 @@
+<property name="GlPointCloud">
+    <param name="visible">1</param>
+    <param name="alwaysVisible">0</param>
+    <param name="editable">1</param>
+    <param name="color">1 1 0 1 </param>
+    <param name="lineWidth">1</param>
+    <param name="labelVisible">1</param>
+    <param name="labelDepthTest">1</param>
+    <param name="labelColor">0 1 1 </param>
+    <param name="labelText"></param>
+    <param name="name">Spine1_biomechanical</param>
+    <param name="pointSize">2</param>
+    <param name="drawLines">0</param>
+    <param name="drawNormals">0</param>
+    <param name="colorWithNormals">0</param>
+    <param name="referenceDataUid">data0</param>
+</property>

@@ -1,0 +1,1357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<propertyfile version="1.1" name="" comment="Written by ImFusionLib, 2023-02-14 15:51:49">
+	<param name="workspaceVersion">20</param>
+	<property name="Datasets">
+		<property name="Data">
+			<param name="name">L1</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data0</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">20</param>
+						<param name="name">Label 20</param>
+						<param name="color">0.9 0.09 0.63 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="name">L2</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data1</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">21</param>
+						<param name="name">Label 21</param>
+						<param name="color">0.9 0.54 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="name">L3</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data2</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">22</param>
+						<param name="name">Label 22</param>
+						<param name="color">0.9 0.78 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="name">L4</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data3</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">23</param>
+						<param name="name">Label 23</param>
+						<param name="color">0.78 0.9 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="name">L5</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data4</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">24</param>
+						<param name="name">Label 24</param>
+						<param name="color">0.54 0.9 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data5</param>
+			<param name="name">Initial Volume</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">0</param>
+						<param name="name">Background</param>
+						<param name="color">0 0 0 1 </param>
+						<param name="isVisible2d">0</param>
+						<param name="isVisible3d">0</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">13</param>
+						<param name="name">Label 13</param>
+						<param name="color">0.9 0.63 0.09 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">14</param>
+						<param name="name">Label 14</param>
+						<param name="color">0.63 0.9 0.09 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">15</param>
+						<param name="name">Label 15</param>
+						<param name="color">0.09 0.9 0.09 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">16</param>
+						<param name="name">Label 16</param>
+						<param name="color">0.09 0.9 0.63 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">17</param>
+						<param name="name">Label 17</param>
+						<param name="color">0.09 0.63 0.9 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">18</param>
+						<param name="name">Label 18</param>
+						<param name="color">0.09 0.09 0.9 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">19</param>
+						<param name="name">Label 19</param>
+						<param name="color">0.630000000000001 0.09 0.9 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">20</param>
+						<param name="name">Label 20</param>
+						<param name="color">0.9 0.09 0.63 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">21</param>
+						<param name="name">Label 21</param>
+						<param name="color">0.9 0.54 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">22</param>
+						<param name="name">Label 22</param>
+						<param name="color">0.9 0.78 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">23</param>
+						<param name="name">Label 23</param>
+						<param name="color">0.78 0.9 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">24</param>
+						<param name="name">Label 24</param>
+						<param name="color">0.54 0.9 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="name">L1_resampled</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data6</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">20</param>
+						<param name="name">Label 20</param>
+						<param name="color">0.9 0.09 0.63 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="name">L2_resampled</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data7</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">21</param>
+						<param name="name">Label 21</param>
+						<param name="color">0.9 0.54 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="name">L3_resampled</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data8</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">22</param>
+						<param name="name">Label 22</param>
+						<param name="color">0.9 0.78 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="name">L4_resampled</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data9</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">23</param>
+						<param name="name">Label 23</param>
+						<param name="color">0.78 0.9 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="name">L5_resampled</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data10</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">24</param>
+						<param name="name">Label 24</param>
+						<param name="color">0.54 0.9 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data11</param>
+			<param name="name">Final Labelmap</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">0</param>
+						<param name="name">Background</param>
+						<param name="color">0 0 0 1 </param>
+						<param name="isVisible2d">0</param>
+						<param name="isVisible3d">0</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">20</param>
+						<param name="name">Label 20</param>
+						<param name="color">0.9 0.09 0.63 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">21</param>
+						<param name="name">Label 21</param>
+						<param name="color">0.9 0.54 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">22</param>
+						<param name="name">Label 22</param>
+						<param name="color">0.9 0.78 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">23</param>
+						<param name="name">Label 23</param>
+						<param name="color">0.78 0.9 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">24</param>
+						<param name="name">Label 24</param>
+						<param name="color">0.54 0.9 0.54 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+	</property>
+	<property name="Interface">
+		<param name="outputUids">"data0" "data1" "data2" "data3" "data4" "data5" "data6" "data7" "data8" "data9" "data10" "data11" </param>
+		<param name="inputUids"/>
+	</property>
+	<property name="Algorithms">
+		<property name="NIFTI File">
+			<param name="location">%(PathTo20)</param>
+			<param name="keepRasCoordinates">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids"/>
+			<param name="outputUids">"data0" </param>
+		</property>
+		<property name="NIFTI File">
+			<param name="location">%(PathTo21)</param>
+			<param name="keepRasCoordinates">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids"/>
+			<param name="outputUids">"data1" </param>
+		</property>
+		<property name="NIFTI File">
+			<param name="location">%(PathTo22)</param>
+			<param name="keepRasCoordinates">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids"/>
+			<param name="outputUids">"data2" </param>
+		</property>
+		<property name="NIFTI File">
+			<param name="location">%(PathTo23)</param>
+			<param name="keepRasCoordinates">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids"/>
+			<param name="outputUids">"data3" </param>
+		</property>
+		<property name="NIFTI File">
+			<param name="location">%(PathTo24)</param>
+			<param name="keepRasCoordinates">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids"/>
+			<param name="outputUids">"data4" </param>
+		</property>
+		<property name="Set Modality">
+			<param name="modality">8</param>
+			<param name="resetDisplayOptions">1</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data0" "data1" "data2" "data3" "data4" </param>
+			<param name="outputUids"/>
+		</property>
+		<property name="Volume Compounding">
+			<param name="mode">3</param>
+			<param name="useGPU">1</param>
+			<param name="useLastAsReference">0</param>
+			<param name="weightedMean">0</param>
+			<param name="weightedMeanMode">1</param>
+			<param name="embedTransformation">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data0" "data1" "data2" "data3" "data4" </param>
+			<param name="outputUids">"data5" </param>
+			<property name="Controller">
+				<param name="userCloseable">1</param>
+				<param name="expanded">1</param>
+				<param name="resizable">0</param>
+			</property>
+		</property>
+		<property name="Image Resampling">
+			<param name="createNewImage">1</param>
+			<param name="keepZeroValues">0</param>
+			<param name="reductionMode">0</param>
+			<param name="interpolationMode">0</param>
+			<param name="cloneDeformation">1</param>
+			<param name="forceCPU">0</param>
+			<param name="preserveExtent">0</param>
+			<param name="verbose">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data0" "data5" </param>
+			<param name="outputUids">"data6" </param>
+		</property>
+		<property name="Image Resampling">
+			<param name="createNewImage">1</param>
+			<param name="keepZeroValues">0</param>
+			<param name="reductionMode">0</param>
+			<param name="interpolationMode">0</param>
+			<param name="cloneDeformation">1</param>
+			<param name="forceCPU">0</param>
+			<param name="preserveExtent">0</param>
+			<param name="verbose">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data1" "data5" </param>
+			<param name="outputUids">"data7" </param>
+		</property>
+		<property name="Image Resampling">
+			<param name="createNewImage">1</param>
+			<param name="keepZeroValues">0</param>
+			<param name="reductionMode">0</param>
+			<param name="interpolationMode">0</param>
+			<param name="cloneDeformation">1</param>
+			<param name="forceCPU">0</param>
+			<param name="preserveExtent">0</param>
+			<param name="verbose">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data2" "data5" </param>
+			<param name="outputUids">"data8" </param>
+		</property>
+		<property name="Image Resampling">
+			<param name="createNewImage">1</param>
+			<param name="keepZeroValues">0</param>
+			<param name="reductionMode">0</param>
+			<param name="interpolationMode">0</param>
+			<param name="cloneDeformation">1</param>
+			<param name="forceCPU">0</param>
+			<param name="preserveExtent">0</param>
+			<param name="verbose">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data3" "data5" </param>
+			<param name="outputUids">"data9" </param>
+		</property>
+		<property name="Image Resampling">
+			<param name="createNewImage">1</param>
+			<param name="keepZeroValues">0</param>
+			<param name="reductionMode">0</param>
+			<param name="interpolationMode">0</param>
+			<param name="cloneDeformation">1</param>
+			<param name="forceCPU">0</param>
+			<param name="preserveExtent">0</param>
+			<param name="verbose">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data4" "data5" </param>
+			<param name="outputUids">"data10" </param>
+		</property>
+		<property name="Volume Compounding">
+			<param name="mode">3</param>
+			<param name="useGPU">1</param>
+			<param name="useLastAsReference">0</param>
+			<param name="weightedMean">0</param>
+			<param name="weightedMeanMode">1</param>
+			<param name="embedTransformation">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data6" "data7" "data8" "data9" "data10" </param>
+			<param name="outputUids">"data11" </param>
+			<property name="Controller">
+				<param name="userCloseable">1</param>
+				<param name="expanded">1</param>
+				<param name="resizable">0</param>
+			</property>
+		</property>
+		<property name="Replace Values">
+			<param name="OldValues">0 </param>
+			<param name="NewValues">12 </param>
+			<param name="ForceCPU">1</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data11" </param>
+			<param name="outputUids"/>
+		</property>
+		<property name="ImFusionFile">
+			<param name="location"/>
+			<param name="compressionMode">0</param>
+			<param name="passes">1</param>
+			<param name="dx">3</param>
+			<param name="dy">3</param>
+			<param name="ignoredDataComponentIds"/>
+			<param name="blockId">-1</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data11" </param>
+			<param name="outputUids"/>
+		</property>
+		<property name="NIFTI File">
+			<param name="location">%(PathToSave)</param>
+			<param name="keepRasCoordinates">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data11" </param>
+			<param name="outputUids"/>
+		</property>
+		<property name="Volume Compounding">
+			<param name="mode">3</param>
+			<param name="useGPU">1</param>
+			<param name="useLastAsReference">0</param>
+			<param name="weightedMean">0</param>
+			<param name="weightedMeanMode">1</param>
+			<param name="embedTransformation">0</param>
+			<param name="inputUids">"data6" "data7" "data8" "data9" "data10" </param>
+			<param name="outputUids"/>
+			<property name="Controller">
+				<param name="userCloseable">1</param>
+				<param name="expanded">1</param>
+				<param name="resizable">0</param>
+			</property>
+		</property>
+	</property>
+	<property name="Display">
+		<param name="layoutMode">0</param>
+		<param name="focusedView">0</param>
+		<param name="viewOrder">0 1 2 3 4 </param>
+		<property name="Views">
+			<property name="0">
+				<param name="isVisible">0</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="1">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 0 0 -0.194400787353525 0 1 0 8.08489990234376 0 0 1 73.1229248046875 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 -0.194400787353525 0 1 0 8.08489990234376 0 0 1 73.1229248046875 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="2">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">0 0 -1 -0.787225723266611 1 0 0 8.08489990234376 0 -1 0 72.6469497680664 0 0 0 1 </param>
+				<param name="sliceMatrix">0 0 -1 -0.787225723266611 1 0 0 8.08489990234376 0 -1 0 72.6469497680664 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="3">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 0 0 -0.194400787353524 0 0 1 8.29444885253907 0 -1 0 72.6469497680664 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 -0.194400787353524 0 0 1 8.29444885253907 0 -1 0 72.6469497680664 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="4">
+				<param name="isVisible">1</param>
+				<param name="volumeRendererName">General Purpose Volume Renderer</param>
+				<param name="sceneCenter">-0.194400787353525 8.08489990234376 72.6469497680664 </param>
+				<param name="displayOptionsSource">1</param>
+				<param name="ssaoMode">0</param>
+				<property name="Camera">
+					<param name="poseMatrix">1 0 -0 0.194400787353516 0 -0 1 -72.6469497680664 -0 -1 0 -199.372388038114 0 0 -0 1 </param>
+					<param name="mode">0</param>
+					<param name="principalPoint">0.5 0.5 </param>
+					<param name="focalLength">1.37373870972731 1.37373870972731 </param>
+					<param name="frustumHeight">100</param>
+				</property>
+				<property name="VolumeRenderer">
+					<param name="mode">4</param>
+					<param name="showDeformations">0</param>
+					<param name="ambientAttenuationDistance">0</param>
+				</property>
+			</property>
+		</property>
+		<property name="VisibleData">
+			<property name="0">
+				<param name="visible"/>
+			</property>
+			<property name="1">
+				<param name="visible">"data11" </param>
+			</property>
+			<property name="2">
+				<param name="visible">"data11" </param>
+			</property>
+			<property name="3">
+				<param name="visible">"data11" </param>
+			</property>
+			<property name="4">
+				<param name="visible">"data11" </param>
+			</property>
+		</property>
+	</property>
+</propertyfile>

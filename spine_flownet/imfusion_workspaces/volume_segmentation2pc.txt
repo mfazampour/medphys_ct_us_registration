@@ -1,0 +1,7 @@
+INPUTFILE;OLDVALUES;OUTPUTSTL;OUTPUTPC
+PCSpineRegistration\source_data\spine11\verse075_seg.nii.gz;21 22 23 24;PCSpineRegistration\source_data\spine11\v1.stl;E:\NAS\jane_project\new_spines_Jane\spine11\v1.txt
+PCSpineRegistration\source_data\spine11\verse075_seg.nii.gz;20 22 23 24;PCSpineRegistration\source_data\spine11\v2.stl;E:\NAS\jane_project\new_spines_Jane\spine11\v2.txt
+PCSpineRegistration\source_data\spine11\verse075_seg.nii.gz;20 21 23 24;PCSpineRegistration\source_data\spine11\v3.stl;E:\NAS\jane_project\new_spines_Jane\spine11\v3.txt
+PCSpineRegistration\source_data\spine11\verse075_seg.nii.gz;20 21 22 24;PCSpineRegistration\source_data\spine11\v4.stl;E:\NAS\jane_project\new_spines_Jane\spine11\v4.txt
+PCSpineRegistration\source_data\spine11\verse075_seg.nii.gz;20 21 22 23;PCSpineRegistration\source_data\spine11\v5.stl;E:\NAS\jane_project\new_spines_Jane\spine11\v5.txt
+

@@ -1,0 +1,45 @@
+---
+version: 1
+
+kind: group
+
+tags: [group]
+
+hptuning:
+  matrix:
+    resume_from_checkpoint:
+      values: [/outputs/mariatirindelli/BonesSegmentation/groups/2765/61104/checkpoints/61104_GanImageGeneration_SubjectSplitDb_pix2pix_Pix2PixModel-epoch=29-val_loss=-1.00.ckpt,
+      /outputs/mariatirindelli/BonesSegmentation/groups/2765/61104/checkpoints/61104_GanImageGeneration_SubjectSplitDb_pix2pix_Pix2PixModel-epoch=59-val_loss=-1.00.ckpt,
+      /outputs/mariatirindelli/BonesSegmentation/groups/2765/61104/checkpoints/61104_GanImageGeneration_SubjectSplitDb_pix2pix_Pix2PixModel-epoch=89-val_loss=-1.00.ckpt]
+
+build:
+  image: pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
+  build_steps:
+    - apt-get update
+    - apt install -y libgl1-mesa-glx
+    - apt-get install -y libglib2.0-0 libsm6 libxext6 libxrender-dev
+    - pip install -r requirements.txt
+    - wandb login b79150d26e52618b08c56a9aef76185e04aa8d6c
+
+environment:
+  resources:
+    cpu:
+      requests: 4
+      limits: 8
+    memory:
+      requests: 8192
+
+    gpu:
+      requests: 1
+      limits: 1
+
+declarations:
+  config_file: config/pix2pix_test_config.yml
+  data_root: /data/RutgersCampProject/test_CT_labels
+
+run:
+  cmd:
+   - python -u train_pix2pix.py -c={{ config_file }} \
+                          --data_root={{ data_root }} \
+                         --resume_from_checkpoint={{ resume_from_checkpoint }} \
+                         --on_polyaxon

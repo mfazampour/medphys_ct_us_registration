@@ -1,0 +1,13 @@
+<property name="Point Cloud">
+    <param name="location">../../Downloads/SpineRegistration-20210927T071136Z-001/SpineRegistration/Spine1_biomechanical.txt</param>
+    <param name="applyMatrixBeforeSaving">0</param>
+    <param name="saveBinary">0</param>
+    <param name="saveCompressed">0</param>
+    <param name="saveNormals">0</param>
+    <param name="saveColors">0</param>
+    <param name="saveLabels">0</param>
+    <param name="execute">1</param>
+    <param name="inputUids"></param>
+    <param name="outputUids">"data0" </param>
+</property>
+

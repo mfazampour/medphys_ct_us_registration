@@ -1,0 +1,747 @@
+<!--ImFusion Suite, 25.10.2021-->
+<propertyfile version="1.1">
+    <param name="workspaceVersion">16</param>
+    <property name="Datasets">
+        <property name="Data">
+            <param name="uid">data0</param>
+            <param name="name">spine7_vert10</param>
+            <param name="transformation">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+        </property>
+        <property name="Data">
+            <param name="uid">data1</param>
+            <param name="name">spine7_vert20</param>
+            <param name="transformation">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+        </property>
+        <property name="Data">
+            <param name="uid">data2</param>
+            <param name="name">spine7_vert30</param>
+            <param name="transformation">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+        </property>
+        <property name="Data">
+            <param name="uid">data3</param>
+            <param name="name">spine7_vert40</param>
+            <param name="transformation">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+        </property>
+        <property name="Data">
+            <param name="uid">data4</param>
+            <param name="name">spine7_vert50</param>
+            <param name="transformation">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+        </property>
+        <property name="Data">
+            <param name="uid">data5</param>
+            <param name="name">Combined mesh</param>
+            <param name="transformation">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+        </property>
+    </property>
+    <property name="Interface">
+        <param name="outputUids">"data0" "data1" "data2" "data3" "data4" "data5" "data6" "data7" "data8" </param>
+        <param name="inputUids"></param>
+    </property>
+    <property name="Algorithms">
+        <property name="Mesh File">
+            <param name="location">%(INPUT1)</param>
+            <param name="applyMatrixBeforeSaving">1</param>
+            <param name="saveTexture">1</param>
+            <param name="loadScaling">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids"></param>
+            <param name="outputUids">"data0" </param>
+        </property>
+        <property name="Mesh File">
+            <param name="location">%(INPUT2)</param>
+            <param name="applyMatrixBeforeSaving">1</param>
+            <param name="saveTexture">1</param>
+            <param name="loadScaling">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids"></param>
+            <param name="outputUids">"data1" </param>
+        </property>
+        <property name="Mesh File">
+            <param name="location">%(INPUT3)</param>
+            <param name="applyMatrixBeforeSaving">1</param>
+            <param name="saveTexture">1</param>
+            <param name="loadScaling">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids"></param>
+            <param name="outputUids">"data2" </param>
+        </property>
+        <property name="Mesh File">
+            <param name="location">%(INPUT4)</param>
+            <param name="applyMatrixBeforeSaving">1</param>
+            <param name="saveTexture">1</param>
+            <param name="loadScaling">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids"></param>
+            <param name="outputUids">"data3" </param>
+        </property>
+        <property name="Mesh File">
+            <param name="location">%(INPUT5)</param>
+            <param name="applyMatrixBeforeSaving">1</param>
+            <param name="saveTexture">1</param>
+            <param name="loadScaling">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids"></param>
+            <param name="outputUids">"data4" </param>
+        </property>
+        <property name="Combine Meshes">
+            <param name="Remesh">1</param>
+            <param name="Iso Level">8</param>
+            <param name="Max distance">10</param>
+	    <param name="execute">1</param>
+            <param name="inputUids">"data0" "data1" "data2" "data3" "data4" </param>
+            <param name="outputUids">"data5"</param>
+        </property>
+        <property name="Convert To Label Map">
+            <param name="Output Spacing">1</param>
+            <param name="Margin">30</param>
+            <param name="Inside Value">13</param>
+            <param name="Outside Value">12</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data5" </param>
+            <param name="outputUids">"data6" </param>
+        </property>
+        <property name="Image Resampling">
+            <param name="resamplingMode">2</param>
+            <param name="targetDimensions">242 246 366 </param>
+            <param name="targetPercent">200 200 200 </param>
+            <param name="targetSpacing">0.5 0.5 0.5 </param>
+            <param name="targetBinning">1 1 1 </param>
+            <param name="createNewImage">1</param>
+            <param name="cloneDeformation">1</param>
+            <param name="forceCPU">0</param>
+            <param name="preserveExtent">0</param>
+            <param name="keepZeroValues">0</param>
+            <param name="verbose">0</param>
+            <param name="reductionMode">1</param>
+            <param name="interpolationMode">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data6" </param>
+            <param name="outputUids">"data7" </param>
+        </property>
+        <property name="Hybrid Ultrasound Simulation">
+            <param name="attenuationCoefficient">0.8</param>
+            <param name="gain">0</param>
+            <param name="probeWidth">30</param>
+            <param name="depth">90</param>
+            <param name="elementsHeight">4</param>
+            <param name="soundSpeed">1540</param>
+            <param name="signalFreq">2</param>
+            <param name="noiseSizeScale">4</param>
+            <param name="noiseIntensityScale">0.3</param>
+            <param name="waveWidth">2</param>
+            <param name="SxFactor">6</param>
+            <param name="SyFactor">3</param>
+            <param name="wavePerPulse">2</param>
+            <param name="duration">3</param>
+            <param name="intensityThreshold">9.99999997475243e-07</param>
+            <param name="RFNoise">1e-06</param>
+            <param name="TGCScaleFactor">0.2</param>
+            <param name="TGCAlpha">0.4</param>
+            <param name="rejectThreshold">0</param>
+            <param name="scaleExponent1">1</param>
+            <param name="scaleExponent2">0.4</param>
+            <param name="focusDepth">30</param>
+            <param name="reflectFactor">2</param>
+            <param name="hilbertLength">8</param>
+            <param name="frameCount">100</param>
+            <param name="elevationRayCount">10</param>
+            <param name="linesCount">128</param>
+            <param name="axialSamplePoints">512</param>
+            <param name="rayCount">1280</param>
+            <param name="multReflection">2</param>
+            <param name="beamSmoothness">6</param>
+            <param name="slicesPerp">1</param>
+            <param name="notUseConvolution">0</param>
+            <param name="sliceFlipX">0</param>
+            <param name="sliceFlipY">0</param>
+            <param name="dataFlipX">0</param>
+            <param name="dataFlipY">0</param>
+            <param name="prepare">0</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data7" </param>
+            <param name="outputUids">"data8"</param>
+            <property name="SplineTransducer">
+                <param name="visible">1</param>
+                <param name="alwaysVisible">0</param>
+                <param name="editable">1</param>
+                <param name="color">1 1 0 1 </param>
+                <param name="lineWidth">1</param>
+                <param name="labelVisible">1</param>
+                <param name="labelDepthTest">1</param>
+                <param name="labelColor">0 1 1 </param>
+                <param name="labelText">145.2 mm</param>
+                <param name="name">Transducer Spline</param>
+                <param name="points">-1.77174949645996 264.841732149076 -111.594397098203 
+-1.77174949645996 264.072557402193 -256.758954060229 
+</param>
+                <param name="pointSize">5</param>
+                <param name="maxPoints">-1</param>
+                <param name="pointColor">1 1 0 1 </param>
+                <param name="labelPixelOffset">0 -0.397392431230067 </param>
+                <param name="lengthAsLabel">1</param>
+                <param name="isClosed">0</param>
+            </property>
+            <property name="SplineDirection">
+                <param name="visible">1</param>
+                <param name="alwaysVisible">0</param>
+                <param name="editable">1</param>
+                <param name="color">1 1 0 1 </param>
+                <param name="lineWidth">1</param>
+                <param name="labelVisible">1</param>
+                <param name="labelDepthTest">1</param>
+                <param name="labelColor">0 1 1 </param>
+                <param name="labelText">158.3 mm</param>
+                <param name="name">Direction Spline</param>
+                <param name="points">-1.77174949645996 148.696345369691 -100.012118617191 
+-1.77174949645996 149.465520116575 -258.303257857697 
+</param>
+                <param name="pointSize">5</param>
+                <param name="maxPoints">-1</param>
+                <param name="pointColor">1 1 0 1 </param>
+                <param name="labelPixelOffset">0 -0.364438750222986 </param>
+                <param name="lengthAsLabel">1</param>
+                <param name="isClosed">0</param>
+            </property>
+            <property name="FrameGeometry">
+                <param name="type">Convex</param>
+                <param name="offset">0 -38.7916248125399 </param>
+                <param name="isTopDown">1</param>
+                <param name="indicatorPosition">0</param>
+                <param name="coordinateSystem">1</param>
+                <param name="shortRadius">23.3358574029062</param>
+                <param name="longRadius">113.335857402906</param>
+                <param name="openingAngle">40</param>
+            </property>
+            <property name="AcousticParameters">
+                <property name="1_Background">
+                    <param name="SoundSpeed_m_s">1540</param>
+                    <param name="AcousticImpedance_g_cm2s">150000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.200000002980232</param>
+                    <param name="Speckle_m0">0</param>
+                    <param name="Speckle_m1">0</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="17_Air">
+                    <param name="SoundSpeed_m_s">345</param>
+                    <param name="AcousticImpedance_g_cm2s">4.09999990463257</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">1.63999998569489</param>
+                    <param name="Speckle_m0">0</param>
+                    <param name="Speckle_m1">0</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="2_Lung">
+                    <param name="SoundSpeed_m_s">1300</param>
+                    <param name="AcousticImpedance_g_cm2s">143000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.639999985694885</param>
+                    <param name="Speckle_m0">0.5</param>
+                    <param name="Speckle_m1">0.5</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="3_Fat">
+                    <param name="SoundSpeed_m_s">1470</param>
+                    <param name="AcousticImpedance_g_cm2s">142000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.479999989271164</param>
+                    <param name="Speckle_m0">0.5</param>
+                    <param name="Speckle_m1">0.5</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="8_Muscle">
+                    <param name="SoundSpeed_m_s">1568</param>
+                    <param name="AcousticImpedance_g_cm2s">163000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">1.0900000333786</param>
+                    <param name="Speckle_m0">0.529999971389771</param>
+                    <param name="Speckle_m1">0.509999990463257</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="11_Liver">
+                    <param name="SoundSpeed_m_s">1540</param>
+                    <param name="AcousticImpedance_g_cm2s">106000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.200000002980232</param>
+                    <param name="Speckle_m0">0.490000009536743</param>
+                    <param name="Speckle_m1">0.400000005960464</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="6_Kidney">
+                    <param name="SoundSpeed_m_s">1540</param>
+                    <param name="AcousticImpedance_g_cm2s">106000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.200000002980232</param>
+                    <param name="Speckle_m0">0.490000009536743</param>
+                    <param name="Speckle_m1">0.200000002980232</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="4_Water">
+                    <param name="SoundSpeed_m_s">1492</param>
+                    <param name="AcousticImpedance_g_cm2s">149000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.0199999995529652</param>
+                    <param name="Speckle_m0">0</param>
+                    <param name="Speckle_m1">0</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="5_CSF">
+                    <param name="SoundSpeed_m_s">1515</param>
+                    <param name="AcousticImpedance_g_cm2s">152000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.0020000000949949</param>
+                    <param name="Speckle_m0">0.0500000007450581</param>
+                    <param name="Speckle_m1">0.00999999977648258</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="9_Grey Matter">
+                    <param name="SoundSpeed_m_s">1590</param>
+                    <param name="AcousticImpedance_g_cm2s">30000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.540000021457672</param>
+                    <param name="Speckle_m0">0.300000011920929</param>
+                    <param name="Speckle_m1">0.200000002980232</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="10_White Matter">
+                    <param name="SoundSpeed_m_s">1530</param>
+                    <param name="AcousticImpedance_g_cm2s">80000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.540000021457672</param>
+                    <param name="Speckle_m0">0.5</param>
+                    <param name="Speckle_m1">0.349999994039536</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="16_Brain Tumor">
+                    <param name="SoundSpeed_m_s">1530</param>
+                    <param name="AcousticImpedance_g_cm2s">163000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.699999988079071</param>
+                    <param name="Speckle_m0">0.800000011920929</param>
+                    <param name="Speckle_m1">0.5</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="15_Vessel">
+                    <param name="SoundSpeed_m_s">1540</param>
+                    <param name="AcousticImpedance_g_cm2s">106000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.5</param>
+                    <param name="Speckle_m0">0.899999976158142</param>
+                    <param name="Speckle_m1">0.649999976158142</param>
+                    <param name="Speckle_s0">0.239999994635582</param>
+                </property>
+                <property name="12_Soft Tissue">
+                    <param name="SoundSpeed_m_s">1540</param>
+                    <param name="AcousticImpedance_g_cm2s">163000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">0.540000021457672</param>
+                    <param name="Speckle_m0">0.529999971389771</param>
+                    <param name="Speckle_m1">0.5</param>
+                    <param name="Speckle_s0">0</param>
+                </property>
+                <property name="13_Bone">
+                    <param name="SoundSpeed_m_s">3600</param>
+                    <param name="AcousticImpedance_g_cm2s">612000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">7.80000019073486</param>
+                    <param name="Speckle_m0">0.779999971389771</param>
+                    <param name="Speckle_m1">0.560000002384186</param>
+                    <param name="Speckle_s0">0.100000001490116</param>
+                </property>
+                <property name="14_Skull">
+                    <param name="SoundSpeed_m_s">3600</param>
+                    <param name="AcousticImpedance_g_cm2s">612000</param>
+                    <param name="AttenuationCoeff_dB_MHzcm">7.80000019073486</param>
+                    <param name="Speckle_m0">0.779999971389771</param>
+                    <param name="Speckle_m1">0.560000002384186</param>
+                    <param name="Speckle_s0">0.100000001490116</param>
+                </property>
+            </property>
+            <property name="Controller">
+                <param name="userCloseable">1</param>
+                <param name="expanded">1</param>
+                <param name="resizable">0</param>
+            </property>
+        </property>
+        <property name="ImFusionFile">
+            <param name="location">%(OUTPUT1)</param>
+            <param name="compressionMode">0</param>
+            <param name="passes">1</param>
+            <param name="dx">3</param>
+            <param name="dy">3</param>
+            <param name="ignoredDataComponentIds"></param>
+            <param name="blockId">-1</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data8"</param>
+            <param name="outputUids"> </param>
+        </property>
+        <property name="ImFusionFile">
+            <param name="location">%(OUTPUT2)</param>
+            <param name="compressionMode">0</param>
+            <param name="passes">1</param>
+            <param name="dx">3</param>
+            <param name="dy">3</param>
+            <param name="ignoredDataComponentIds"></param>
+            <param name="blockId">-1</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data7"</param>
+            <param name="outputUids"></param>
+        </property>
+    </property>
+    <property name="Annotations">
+        <property name="GlMesh">
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText"></param>
+            <param name="name">spine7_vert10</param>
+            <param name="renderCrossSection">0</param>
+            <param name="crossSectionColor">1 0 0 0.5 </param>
+            <param name="renderMode">0</param>
+            <param name="materialModeFront">0</param>
+            <param name="materialModeBack">0</param>
+            <param name="lightingEnabled">1 1 </param>
+            <param name="ambientFront">1 1 1 </param>
+            <param name="diffuseFront">1 1 1 </param>
+            <param name="specularFront">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessFront">50</param>
+            <param name="ambientBack">1 1 1 </param>
+            <param name="diffuseBack">1 1 1 </param>
+            <param name="specularBack">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessBack">50</param>
+            <param name="wireframeColor">0 0 1 1 </param>
+            <param name="wireframeWidth">1</param>
+            <param name="wireframeMaterialMode">0</param>
+            <param name="lineColor">1 1 1 1 </param>
+            <param name="projectiveFrontColor">0.800000011920929 0.300000011920929 0 1 </param>
+            <param name="projectiveBackColor">0.100000001490116 0.300000011920929 0.600000023841858 0.5 </param>
+            <param name="projectiveIntersectionTolerance">0</param>
+            <param name="projectiveFadeoutRange">10</param>
+            <param name="drawIn2D">0</param>
+            <param name="drawNormals">0</param>
+            <param name="useFaceNormals">0</param>
+            <param name="referenceDataUid">data0</param>
+        </property>
+        <property name="GlMesh">
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText"></param>
+            <param name="name">spine7_vert20</param>
+            <param name="renderCrossSection">0</param>
+            <param name="crossSectionColor">1 0 0 0.5 </param>
+            <param name="renderMode">0</param>
+            <param name="materialModeFront">0</param>
+            <param name="materialModeBack">0</param>
+            <param name="lightingEnabled">1 1 </param>
+            <param name="ambientFront">1 1 1 </param>
+            <param name="diffuseFront">1 1 1 </param>
+            <param name="specularFront">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessFront">50</param>
+            <param name="ambientBack">1 1 1 </param>
+            <param name="diffuseBack">1 1 1 </param>
+            <param name="specularBack">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessBack">50</param>
+            <param name="wireframeColor">0 0 1 1 </param>
+            <param name="wireframeWidth">1</param>
+            <param name="wireframeMaterialMode">0</param>
+            <param name="lineColor">1 1 1 1 </param>
+            <param name="projectiveFrontColor">0.800000011920929 0.300000011920929 0 1 </param>
+            <param name="projectiveBackColor">0.100000001490116 0.300000011920929 0.600000023841858 0.5 </param>
+            <param name="projectiveIntersectionTolerance">0</param>
+            <param name="projectiveFadeoutRange">10</param>
+            <param name="drawIn2D">0</param>
+            <param name="drawNormals">0</param>
+            <param name="useFaceNormals">0</param>
+            <param name="referenceDataUid">data1</param>
+        </property>
+        <property name="GlMesh">
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText"></param>
+            <param name="name">spine7_vert30</param>
+            <param name="renderCrossSection">0</param>
+            <param name="crossSectionColor">1 0 0 0.5 </param>
+            <param name="renderMode">0</param>
+            <param name="materialModeFront">0</param>
+            <param name="materialModeBack">0</param>
+            <param name="lightingEnabled">1 1 </param>
+            <param name="ambientFront">1 1 1 </param>
+            <param name="diffuseFront">1 1 1 </param>
+            <param name="specularFront">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessFront">50</param>
+            <param name="ambientBack">1 1 1 </param>
+            <param name="diffuseBack">1 1 1 </param>
+            <param name="specularBack">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessBack">50</param>
+            <param name="wireframeColor">0 0 1 1 </param>
+            <param name="wireframeWidth">1</param>
+            <param name="wireframeMaterialMode">0</param>
+            <param name="lineColor">1 1 1 1 </param>
+            <param name="projectiveFrontColor">0.800000011920929 0.300000011920929 0 1 </param>
+            <param name="projectiveBackColor">0.100000001490116 0.300000011920929 0.600000023841858 0.5 </param>
+            <param name="projectiveIntersectionTolerance">0</param>
+            <param name="projectiveFadeoutRange">10</param>
+            <param name="drawIn2D">0</param>
+            <param name="drawNormals">0</param>
+            <param name="useFaceNormals">0</param>
+            <param name="referenceDataUid">data2</param>
+        </property>
+        <property name="GlMesh">
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText"></param>
+            <param name="name">spine7_vert40</param>
+            <param name="renderCrossSection">0</param>
+            <param name="crossSectionColor">1 0 0 0.5 </param>
+            <param name="renderMode">0</param>
+            <param name="materialModeFront">0</param>
+            <param name="materialModeBack">0</param>
+            <param name="lightingEnabled">1 1 </param>
+            <param name="ambientFront">1 1 1 </param>
+            <param name="diffuseFront">1 1 1 </param>
+            <param name="specularFront">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessFront">50</param>
+            <param name="ambientBack">1 1 1 </param>
+            <param name="diffuseBack">1 1 1 </param>
+            <param name="specularBack">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessBack">50</param>
+            <param name="wireframeColor">0 0 1 1 </param>
+            <param name="wireframeWidth">1</param>
+            <param name="wireframeMaterialMode">0</param>
+            <param name="lineColor">1 1 1 1 </param>
+            <param name="projectiveFrontColor">0.800000011920929 0.300000011920929 0 1 </param>
+            <param name="projectiveBackColor">0.100000001490116 0.300000011920929 0.600000023841858 0.5 </param>
+            <param name="projectiveIntersectionTolerance">0</param>
+            <param name="projectiveFadeoutRange">10</param>
+            <param name="drawIn2D">0</param>
+            <param name="drawNormals">0</param>
+            <param name="useFaceNormals">0</param>
+            <param name="referenceDataUid">data3</param>
+        </property>
+        <property name="GlMesh">
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText"></param>
+            <param name="name">spine7_vert50</param>
+            <param name="renderCrossSection">0</param>
+            <param name="crossSectionColor">1 0 0 0.5 </param>
+            <param name="renderMode">0</param>
+            <param name="materialModeFront">0</param>
+            <param name="materialModeBack">0</param>
+            <param name="lightingEnabled">1 1 </param>
+            <param name="ambientFront">1 1 1 </param>
+            <param name="diffuseFront">1 1 1 </param>
+            <param name="specularFront">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessFront">50</param>
+            <param name="ambientBack">1 1 1 </param>
+            <param name="diffuseBack">1 1 1 </param>
+            <param name="specularBack">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessBack">50</param>
+            <param name="wireframeColor">0 0 1 1 </param>
+            <param name="wireframeWidth">1</param>
+            <param name="wireframeMaterialMode">0</param>
+            <param name="lineColor">1 1 1 1 </param>
+            <param name="projectiveFrontColor">0.800000011920929 0.300000011920929 0 1 </param>
+            <param name="projectiveBackColor">0.100000001490116 0.300000011920929 0.600000023841858 0.5 </param>
+            <param name="projectiveIntersectionTolerance">0</param>
+            <param name="projectiveFadeoutRange">10</param>
+            <param name="drawIn2D">0</param>
+            <param name="drawNormals">0</param>
+            <param name="useFaceNormals">0</param>
+            <param name="referenceDataUid">data4</param>
+        </property>
+        <property name="GlMesh">
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText"></param>
+            <param name="name">Combined mesh</param>
+            <param name="renderCrossSection">0</param>
+            <param name="crossSectionColor">1 0 0 0.5 </param>
+            <param name="renderMode">0</param>
+            <param name="materialModeFront">0</param>
+            <param name="materialModeBack">0</param>
+            <param name="lightingEnabled">1 1 </param>
+            <param name="ambientFront">1 1 1 </param>
+            <param name="diffuseFront">1 1 1 </param>
+            <param name="specularFront">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessFront">50</param>
+            <param name="ambientBack">1 1 1 </param>
+            <param name="diffuseBack">1 1 1 </param>
+            <param name="specularBack">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessBack">50</param>
+            <param name="wireframeColor">0 0 1 1 </param>
+            <param name="wireframeWidth">1</param>
+            <param name="wireframeMaterialMode">0</param>
+            <param name="lineColor">1 1 1 1 </param>
+            <param name="projectiveFrontColor">0.800000011920929 0.300000011920929 0 1 </param>
+            <param name="projectiveBackColor">0.100000001490116 0.300000011920929 0.600000023841858 0.5 </param>
+            <param name="projectiveIntersectionTolerance">0</param>
+            <param name="projectiveFadeoutRange">10</param>
+            <param name="drawIn2D">0</param>
+            <param name="drawNormals">0</param>
+            <param name="useFaceNormals">0</param>
+            <param name="referenceDataUid">data5</param>
+        </property>
+        <property name="GlSpline">
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText">145.2 mm</param>
+            <param name="name">Transducer Spline</param>
+            <param name="points">-1.77174949645996 264.841732149076 -111.594397098203 
+-1.77174949645996 264.072557402193 -256.758954060229 
+</param>
+            <param name="pointSize">5</param>
+            <param name="maxPoints">-1</param>
+            <param name="pointColor">1 1 0 1 </param>
+            <param name="labelPixelOffset">0 -0.397392431230067 </param>
+            <param name="lengthAsLabel">1</param>
+            <param name="isClosed">0</param>
+            <param name="parentDataUid">data7</param>
+        </property>
+        <property name="GlSpline">
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText">158.3 mm</param>
+            <param name="name">Direction Spline</param>
+            <param name="points">-1.77174949645996 148.696345369691 -100.012118617191 
+-1.77174949645996 149.465520116575 -258.303257857697 
+</param>
+            <param name="pointSize">5</param>
+            <param name="maxPoints">-1</param>
+            <param name="pointColor">1 1 0 1 </param>
+            <param name="labelPixelOffset">0 -0.364438750222986 </param>
+            <param name="lengthAsLabel">1</param>
+            <param name="isClosed">0</param>
+            <param name="parentDataUid">data7</param>
+        </property>
+    </property>
+    <property name="Display">
+        <param name="layoutMode">0</param>
+        <param name="focusedView">0</param>
+        <property name="Views">
+            <property name="0">
+                <param name="viewOptionsSource">0</param>
+                <param name="interpolation">1</param>
+                <param name="flip">1</param>
+                <param name="blendingMode">1</param>
+                <param name="zoom">1.1</param>
+                <param name="showZoom">1</param>
+                <param name="showIn3D">1</param>
+                <param name="viewMatrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+                <param name="sliceMatrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+                <param name="showOrientationMarkers">0</param>
+                <param name="displayOptionsSource">1</param>
+                <param name="sliceThickness">0</param>
+            </property>
+            <property name="1">
+                <param name="viewOptionsSource">0</param>
+                <param name="interpolation">1</param>
+                <param name="flip">1</param>
+                <param name="blendingMode">1</param>
+                <param name="zoom">1</param>
+                <param name="showZoom">1</param>
+                <param name="showIn3D">1</param>
+                <param name="viewMatrix">1 0 0 -1.77174949645996 0 1 0 219.432965667446 0 0 1 -179.817331909297 0 0 0 1 </param>
+                <param name="sliceMatrix">1 0 0 -1.77174949645996 0 1 0 219.432965667446 0 0 1 -179.817331909297 0 0 0 1 </param>
+                <param name="showOrientationMarkers">0</param>
+                <param name="displayOptionsSource">1</param>
+                <param name="sliceThickness">0</param>
+            </property>
+            <property name="2">
+                <param name="viewOptionsSource">0</param>
+                <param name="interpolation">1</param>
+                <param name="flip">1</param>
+                <param name="blendingMode">1</param>
+                <param name="zoom">1</param>
+                <param name="showZoom">1</param>
+                <param name="showIn3D">1</param>
+                <param name="viewMatrix">0 0 -1 -1.77174949645996 1 0 0 219.432965667446 0 -1 0 -179.817331909297 0 0 0 1 </param>
+                <param name="sliceMatrix">0 0 -1 -1.77174949645996 1 0 0 219.432965667446 0 -1 0 -179.817331909297 0 0 0 1 </param>
+                <param name="showOrientationMarkers">0</param>
+                <param name="displayOptionsSource">1</param>
+                <param name="sliceThickness">0</param>
+            </property>
+            <property name="3">
+                <param name="viewOptionsSource">0</param>
+                <param name="interpolation">1</param>
+                <param name="flip">1</param>
+                <param name="blendingMode">1</param>
+                <param name="zoom">1</param>
+                <param name="showZoom">1</param>
+                <param name="showIn3D">1</param>
+                <param name="viewMatrix">1 0 0 -1.77174949645996 0 0 1 219.432965667446 0 -1 0 -179.817331909297 0 0 0 1 </param>
+                <param name="sliceMatrix">1 0 0 -1.77174949645996 0 0 1 219.432965667446 0 -1 0 -179.817331909297 0 0 0 1 </param>
+                <param name="showOrientationMarkers">0</param>
+                <param name="displayOptionsSource">1</param>
+                <param name="sliceThickness">0</param>
+            </property>
+            <property name="4">
+                <param name="viewOptionsSource">0</param>
+                <param name="renderMode">4</param>
+                <param name="sceneCenter">-1.77174949645996 219.432965667446 -179.817331909297 </param>
+                <param name="displayOptionsSource">1</param>
+                <property name="Camera">
+                    <param name="poseMatrix">0.99026806874157 -0.139173100960065 0 32.2936732369553 0.122423419640943 0.871087893423903 -0.475624209070275 -276.453972445398 0.0661940960679887 0.470995466962758 0.879648572866617 -258.304393565141 -0 0 0 1 </param>
+                    <param name="mode">0</param>
+                    <param name="principalPoint">0.5 0.5 </param>
+                    <param name="focalLength">1.37373870972731 1.37373870972731 </param>
+                    <param name="frustumHeight">100</param>
+                </property>
+                <property name="VolumeRenderer">
+                    <param name="mode">4</param>
+                    <param name="showDeformations">0</param>
+                    <param name="ambientAttenuationDistance">0</param>
+                </property>
+            </property>
+        </property>
+        <property name="VisibleData">
+            <property name="0">
+                <param name="visible">"data8" </param>
+            </property>
+            <property name="1">
+                <param name="visible">"data8" "data7" </param>
+            </property>
+            <property name="2">
+                <param name="visible">"data8" "data7" </param>
+            </property>
+            <property name="3">
+                <param name="visible">"data8" "data7" </param>
+            </property>
+            <property name="4">
+                <param name="visible">"data7" </param>
+            </property>
+        </property>
+    </property>
+</propertyfile>

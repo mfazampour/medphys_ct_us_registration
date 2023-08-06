@@ -1,0 +1,20 @@
+program: train.py
+method: random
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+  lr:
+    value: 0.0005
+  loss:
+    value: "mse,rigidity"
+  test_id:
+    values: [1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+  dataset_path:
+    values: ["/mnt/polyaxon/data1/Spine_Flownet/new_data_raycasted/","/mnt/polyaxon/data1/Spine_Flownet/new_data_us/"]
+  sweep_target_loss:
+    value: 'TRE'
+  coeff_rigidity:
+    value: 5.0
+  num_filt:
+    values: [16, 32, 48, 64]

@@ -1,0 +1,72 @@
+<!--ImFusion Suite, 27.09.2021-->
+<propertyfile version="1.1">
+    <param name="workspaceVersion">16</param>
+    <property name="Datasets">
+        <property name="Data">
+            <param name="uid">data0</param>
+            <param name="name">Spine1_biomechanical</param>
+            <param name="transformation">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+        </property>
+    </property>
+    <property name="Interface">
+        <param name="outputUids">"data0" </param>
+        <param name="inputUids"></param>
+    </property>
+    <property name="Algorithms">
+        <property name="Point Cloud">
+            <param name="location">../../Downloads/SpineRegistration-20210927T071136Z-001/SpineRegistration/Spine1_biomechanical.txt</param>
+            <param name="applyMatrixBeforeSaving">0</param>
+            <param name="saveBinary">0</param>
+            <param name="saveCompressed">0</param>
+            <param name="saveNormals">0</param>
+            <param name="saveColors">0</param>
+            <param name="saveLabels">0</param>
+            <param name="execute">1</param>
+            <param name="inputUids"></param>
+            <param name="outputUids">"data0" </param>
+        </property>
+    </property>
+    <property name="Annotations">
+        <property name="GlPointCloud">
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText"></param>
+            <param name="name">Spine1_biomechanical</param>
+            <param name="pointSize">2</param>
+            <param name="drawLines">0</param>
+            <param name="drawNormals">0</param>
+            <param name="colorWithNormals">0</param>
+            <param name="referenceDataUid">data0</param>
+        </property>
+        <property name="GlLine">
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText">270.10</param>
+            <param name="name">Line Segment</param>
+            <param name="points">-215.161016949153 -108.413793103448 0 27.5847457627119 10.0383141762452 0 </param>
+            <param name="pointSize">5</param>
+            <param name="maxPoints">2</param>
+            <param name="pointColor">1 1 0 1 </param>
+            <param name="labelPixelOffset">0 0 </param>
+            <param name="centeredText">0</param>
+            <param name="useLengthAsLabel">1</param>
+            <param name="colorGradientStart">0 0 0 </param>
+            <param name="colorGradientStop">0 0 0 </param>
+            <param name="useColorGradient">0</param>
+        </property>
+    </property>
+    <property name="DataLinks"/>
+    <property name="Display"/>
+</propertyfile>

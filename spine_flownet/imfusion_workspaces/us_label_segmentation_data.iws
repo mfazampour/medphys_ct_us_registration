@@ -1,0 +1,109 @@
+<!--ImFusion Suite, 25.10.2021-->
+<propertyfile version="1.1">
+    <param name="workspaceVersion">16</param>
+    <property name="Datasets">
+        <property name="Data">
+            <param name="topDown">1</param>
+            <param name="name">%(USNAME)</param>
+            <param name="blockId">1</param>
+            <param name="original">1</param>
+            <param name="linkMPR">0</param>
+            <param name="hide3D">0</param>
+            <param name="uid">data1</param>
+            <property name="MetaData">
+                <param name="topDown">1</param>
+            </property>
+            <property name="Components"/>
+        </property>
+        <property name="Data">
+            <param name="original">1</param>
+            <param name="topDown">1</param>
+            <param name="uid">data2</param>
+            <param name="name">%(LABELNAME)</param>
+            <property name="Components"/>
+        </property>
+    </property>
+    <property name="Interface">
+        <param name="outputUids">"data0" "data1" "data2" </param>
+        <param name="inputUids"></param>
+    </property>
+    <property name="Algorithms">
+        <property name="ImFusionFile">
+            <param name="location">%(INPUTLABEL)</param>
+            <param name="compressionMode">0</param>
+            <param name="passes">1</param>
+            <param name="dx">3</param>
+            <param name="dy">3</param>
+            <param name="ignoredDataComponentIds"></param>
+            <param name="blockId">-1</param>
+            <param name="execute">1</param>
+            <param name="inputUids"></param>
+            <param name="outputUids">"data0" </param>
+        </property>
+        <property name="Set Modality">
+            <param name="modality">8</param>
+            <param name="resetDisplayOptions">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data0" </param>
+            <param name="outputUids"></param>
+        </property>
+        <property name="ImFusionFile">
+            <param name="location">%(INPUTUS)</param>
+            <param name="compressionMode">0</param>
+            <param name="passes">1</param>
+            <param name="dx">3</param>
+            <param name="dy">3</param>
+            <param name="ignoredDataComponentIds"></param>
+            <param name="blockId">-1</param>
+            <param name="execute">1</param>
+            <param name="inputUids"></param>
+            <param name="outputUids">"data1" </param>
+        </property>
+        <property name="Slice Volume To US">
+            <param name="execute">1</param>
+            <param name="inputUids">"data0" "data1" </param>
+            <param name="outputUids">"data2" </param>
+            <param name="execute">1</param>
+            <property name="Controller">
+                <param name="userCloseable">1</param>
+                <param name="expanded">1</param>
+                <param name="resizable">0</param>
+            </property>
+        </property>
+        <property name="Set Modality">
+            <param name="modality">8</param>
+            <param name="resetDisplayOptions">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data2" </param>
+            <param name="outputUids"></param>
+        </property>
+        <property name="Change Selection">
+            <param name="execute">1</param>
+            <param name="inputUids">"data1" </param>
+            <param name="outputUids"></param>
+        </property>
+        <property name="2D Image Set">
+            <param name="location">%(OUTPUTPATH)</param>
+            <param name="skip">0</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data1" </param>
+            <param name="outputUids"></param>
+        </property>
+        <property name="Change Selection">
+            <param name="focus">10</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data2" </param>
+            <param name="outputUids"></param>
+        </property>
+        <property name="2D Image Set">
+            <param name="location">%(OUTPUTPATH)</param>
+            <param name="skip">0</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data2" </param>
+            <param name="outputUids"></param>
+        </property>
+    </property>
+    <property name="Annotations"/>
+    <property name="DataLinks"/>
+    <property name="Display"/>
+</propertyfile>

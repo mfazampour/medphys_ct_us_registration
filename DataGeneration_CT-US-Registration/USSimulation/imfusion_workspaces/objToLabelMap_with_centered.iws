@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<propertyfile version="1.1" name="" comment="Written by ImFusionLib, 2023-01-17 17:16:34">
+	<param name="workspaceVersion">20</param>
+	<property name="Datasets">
+		<property name="Data">
+			<param name="uid">data0</param>
+			<param name="name">current_spine</param>
+		</property>
+		<property name="Data">
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data1</param>
+			<param name="name">Volume</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+				<property name="LabelDataComponent">
+					<param name="sourceModality">0</param>
+					<property name="LabelConfig">
+						<param name="pixelValue">12</param>
+						<param name="name">Label 12</param>
+						<param name="color">0 0.5 0.533 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+					<property name="LabelConfig">
+						<param name="pixelValue">13</param>
+						<param name="name">Label 13</param>
+						<param name="color">0.9 0.63 0.09 1 </param>
+						<param name="isVisible2d">1</param>
+						<param name="isVisible3d">1</param>
+						<param name="segmentationAlgorithmType">0</param>
+						<param name="segmentationAlgorithmName"/>
+					</property>
+				</property>
+			</property>
+		</property>
+	</property>
+	<property name="Interface">
+		<param name="outputUids">"data0" "data1" </param>
+		<param name="inputUids"/>
+	</property>
+	<property name="Algorithms">
+		<property name="Mesh File">
+			<param name="location">%(PathToFile)</param>
+			<param name="applyMatrixBeforeSaving">1</param>
+			<param name="saveTexture">1</param>
+			<param name="loadScaling">1</param>
+			<param name="mergeDuplicateVertices">1</param>
+			<param name="forceNoChecks">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids"/>
+			<param name="outputUids">"data0" </param>
+		</property>
+		<property name="Convert To Label Map">
+			<param name="outSpacing">1</param>
+			<param name="marginPx">10</param>
+			<param name="outsideValue">12</param>
+			<param name="insideValue">%(InsideValue)</param>
+			<param name="useGPU">1</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data0" </param>
+			<param name="outputUids">"data1" </param>
+		</property>
+		<property name="NIFTI File">
+			<param name="location">%(PathToSave)</param>
+			<param name="keepRasCoordinates">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data1" </param>
+			<param name="outputUids"/>
+		</property>
+	</property>
+	<property name="Annotations">
+		<property name="GlMesh">
+			<param name="visible">1</param>
+			<param name="alwaysVisible">0</param>
+			<param name="editable">1</param>
+			<param name="color">1 1 0 1 </param>
+			<param name="lineWidth">1</param>
+			<param name="labelVisible">1</param>
+			<param name="labelBackgroundVisible">0</param>
+			<param name="labelBackgroundColor">0.3 0.3 0.3 0.7 </param>
+			<param name="labelBackgroundMargin">3</param>
+			<param name="labelDepthTest">1</param>
+			<param name="labelColor">0 1 1 </param>
+			<param name="labelText"/>
+			<param name="name">sub-verse507forcefield0_lumbar_deformed_centered</param>
+			<param name="renderCrossSection">0</param>
+			<param name="crossSectionColor">1 0 0 0.5 </param>
+			<param name="renderMode">0</param>
+			<param name="materialModeFront">0</param>
+			<param name="materialModeBack">0</param>
+			<param name="lightingEnabled">1 1 </param>
+			<param name="ambientFront">1 1 1 </param>
+			<param name="diffuseFront">1 1 1 </param>
+			<param name="specularFront">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+			<param name="shininessFront">50</param>
+			<param name="ambientBack">1 1 1 </param>
+			<param name="diffuseBack">1 1 1 </param>
+			<param name="specularBack">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+			<param name="shininessBack">50</param>
+			<param name="wireframeColor">0 0 1 1 </param>
+			<param name="wireframeWidth">1</param>
+			<param name="wireframeMaterialMode">0</param>
+			<param name="lineColor">1 1 1 1 </param>
+			<param name="projectiveFrontColor">0.800000011920929 0.300000011920929 0 1 </param>
+			<param name="projectiveBackColor">0.100000001490116 0.300000011920929 0.600000023841858 0.5 </param>
+			<param name="projectiveIntersectionTolerance">0</param>
+			<param name="projectiveFadeoutRange">10</param>
+			<param name="drawIn2D">0</param>
+			<param name="drawNormals">0</param>
+			<param name="useFaceNormals">0</param>
+			<param name="poseLinked">0</param>
+			<param name="referenceDataUid">data0</param>
+		</property>
+	</property>
+	<property name="Display">
+		<param name="layoutMode">0</param>
+		<param name="focusedView">0</param>
+		<param name="viewOrder">0 1 2 3 4 </param>
+		<property name="Views">
+			<property name="0">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="1">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 0 0 0.928450000000002 0 1 0 1.43735 0 0 1 3.1133 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 0.928450000000002 0 1 0 1.43735 0 0 1 3.1133 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="2">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">0 0 -1 0.928450000000002 1 0 0 1.43735 0 -1 0 3.1133 0 0 0 1 </param>
+				<param name="sliceMatrix">0 0 -1 0.928450000000002 1 0 0 1.43735 0 -1 0 3.1133 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="3">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 0 0 0.928450000000002 0 0 1 1.43735 0 -1 0 3.1133 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 0.928450000000002 0 0 1 1.43735 0 -1 0 3.1133 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="4">
+				<param name="isVisible">1</param>
+				<param name="volumeRendererName">General Purpose Volume Renderer</param>
+				<param name="sceneCenter">0.928450000000002 1.43735 3.1133 </param>
+				<param name="displayOptionsSource">1</param>
+				<param name="ssaoMode">0</param>
+				<property name="Camera">
+					<param name="poseMatrix">0.328866646738583 0.944376370237481 -0 0.203765573682126 -0.0362525398074415 0.0126244700502536 0.999262916410621 -3.09549234910371 0.943680285912782 -0.328624244530178 0.03838780908752 -1031.28546780329 0 0 -0 1 </param>
+					<param name="mode">0</param>
+					<param name="principalPoint">0.5 0.5 </param>
+					<param name="focalLength">1.37373870972731 1.37373870972731 </param>
+					<param name="frustumHeight">100</param>
+				</property>
+				<property name="VolumeRenderer">
+					<param name="mode">4</param>
+					<param name="showDeformations">0</param>
+					<param name="ambientAttenuationDistance">0</param>
+				</property>
+			</property>
+		</property>
+		<property name="VisibleData">
+			<property name="0">
+				<param name="visible"/>
+			</property>
+			<property name="1">
+				<param name="visible">"data1" </param>
+			</property>
+			<property name="2">
+				<param name="visible">"data1" </param>
+			</property>
+			<property name="3">
+				<param name="visible">"data1" </param>
+			</property>
+			<property name="4">
+				<param name="visible">"data1" </param>
+			</property>
+		</property>
+	</property>
+</propertyfile>

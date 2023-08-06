@@ -1,0 +1,180 @@
+<!--ImFusion Suite, 04.10.2021-->
+<propertyfile version="1.1">
+    <param name="workspaceVersion">16</param>
+    <property name="Datasets">
+        <property name="Data">
+            <param name="name">verse082_seg</param>
+            <param name="original">1</param>
+            <param name="topDown">1</param>
+            <param name="uid">data0</param>
+            <param name="transformation">1 1.22464679914735e-16 0 0.5 1.22464679914735e-16 -1 0 87.0328063964844 -0 -0 -1 -389.469970703125 0 0 0 1 </param>
+            <property name="Components"/>
+        </property>
+        <property name="Data">
+            <param name="uid">data1</param>
+            <param name="name">verse082_seg Mesh</param>
+            <param name="transformation">0.001 0 0 0 0 0.001 0 0 0 0 0.001 0 0 0 0 1 </param>
+        </property>
+        <property name="Data">
+            <param name="uid">data2</param>
+            <param name="name">verse082_seg Mesh Point Cloud</param>
+            <param name="transformation">0.001 0 0 0 0 0.001 0 0 0 0 0.001 0 0 0 0 1 </param>
+        </property>
+    </property>
+    <property name="Interface">
+        <param name="outputUids">"data0" "data1" "data2" </param>
+        <param name="inputUids"></param>
+    </property>
+    <property name="Algorithms">
+        <property name="NIFTI File">
+            <param name="location">%(INPUTFILE)</param>
+            <param name="keepRasCoordinates">0</param>
+            <param name="execute">1</param>
+            <param name="inputUids"></param>
+            <param name="outputUids">"data0" </param>
+        </property>
+        <property name="Replace Values">
+            <param name="OldValues">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 </param>
+            <param name="NewValues">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </param>
+            <param name="ForceCPU">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data0" </param>
+            <param name="outputUids"></param>
+        </property>
+        <property name="Replace Values">
+            <param name="OldValues">%(OLDVALUES) </param>
+            <param name="NewValues">0 0 0 0 </param>
+            <param name="ForceCPU">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data0" </param>
+            <param name="outputUids"></param>
+        </property>
+        <property name="Extract Mesh">
+            <param name="Iso-Value">0.5</param>
+            <param name="Threshold Above Iso-Value">1</param>
+            <param name="Smoothing">0</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data0" </param>
+            <param name="outputUids">"data1" </param>
+            <property name="Controller">
+                <param name="userCloseable">1</param>
+                <param name="expanded">1</param>
+                <param name="resizable">0</param>
+            </property>
+        </property>
+        <property name="Mesh File">
+            <param name="location">%(OUTPUTSTL)</param>
+            <param name="applyMatrixBeforeSaving">1</param>
+            <param name="saveTexture">1</param>
+            <param name="loadScaling">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data1" </param>
+            <param name="outputUids"></param>
+        </property>
+        <property name="Extract Point Cloud">
+            <param name="colorSource">0</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data1" </param>
+            <param name="outputUids">"data2" </param>
+        </property>
+        <property name="Point Cloud">
+            <param name="location">%(OUTPUTPC)</param>
+            <param name="applyMatrixBeforeSaving">1</param>
+            <param name="saveBinary">1</param>
+            <param name="saveCompressed">0</param>
+            <param name="saveNormals">1</param>
+            <param name="saveColors">1</param>
+            <param name="saveLabels">1</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data2" </param>
+            <param name="outputUids"></param>
+        </property>
+        <property name="Extract Mesh">
+            <param name="Iso-Value">0.5</param>
+            <param name="Threshold Above Iso-Value">1</param>
+            <param name="Smoothing">0</param>
+            <param name="inputUids">"data0" </param>
+            <param name="outputUids"></param>
+            <property name="Controller">
+                <param name="userCloseable">1</param>
+                <param name="expanded">1</param>
+                <param name="resizable">0</param>
+            </property>
+        </property>
+        <property name="Edit Transformation">
+            <param name="useEulerParameters">0</param>
+            <param name="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+            <param name="translation">0 0 0 </param>
+            <param name="rotation">0 0 0 </param>
+            <param name="scaling">0 0 0 </param>
+            <param name="shearing">0 0 0 </param>
+            <param name="inputUids">"data1" </param>
+            <param name="outputUids"></param>
+            <property name="Controller">
+                <param name="userCloseable">1</param>
+                <param name="expanded">1</param>
+                <param name="resizable">0</param>
+            </property>
+        </property>
+    </property>
+    <property name="Annotations">
+        <property name="GlMesh">
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText"></param>
+            <param name="name">verse082_seg Mesh</param>
+            <param name="renderCrossSection">0</param>
+            <param name="crossSectionColor">1 0 0 0.5 </param>
+            <param name="renderMode">0</param>
+            <param name="materialModeFront">0</param>
+            <param name="materialModeBack">0</param>
+            <param name="lightingEnabled">1 1 </param>
+            <param name="ambientFront">1 1 1 </param>
+            <param name="diffuseFront">1 1 1 </param>
+            <param name="specularFront">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessFront">50</param>
+            <param name="ambientBack">1 1 1 </param>
+            <param name="diffuseBack">1 1 1 </param>
+            <param name="specularBack">0.100000001490116 0.100000001490116 0.100000001490116 </param>
+            <param name="shininessBack">50</param>
+            <param name="wireframeColor">0 0 1 1 </param>
+            <param name="wireframeWidth">1</param>
+            <param name="wireframeMaterialMode">0</param>
+            <param name="lineColor">1 1 1 1 </param>
+            <param name="projectiveFrontColor">0.800000011920929 0.300000011920929 0 1 </param>
+            <param name="projectiveBackColor">0.100000001490116 0.300000011920929 0.600000023841858 0.5 </param>
+            <param name="projectiveIntersectionTolerance">0</param>
+            <param name="projectiveFadeoutRange">10</param>
+            <param name="drawIn2D">0</param>
+            <param name="drawNormals">0</param>
+            <param name="useFaceNormals">0</param>
+            <param name="referenceDataUid">data1</param>
+        </property>
+        <property name="GlPointCloud">
+            <param name="matrix">0.001 0 0 0 0 0.001 0 0 0 0 0.001 0 0 0 0 1 </param>
+            <param name="visible">1</param>
+            <param name="alwaysVisible">0</param>
+            <param name="editable">1</param>
+            <param name="color">1 1 0 1 </param>
+            <param name="lineWidth">1</param>
+            <param name="labelVisible">1</param>
+            <param name="labelDepthTest">1</param>
+            <param name="labelColor">0 1 1 </param>
+            <param name="labelText"></param>
+            <param name="name">verse082_seg Mesh Point Cloud</param>
+            <param name="pointSize">2</param>
+            <param name="drawLines">0</param>
+            <param name="drawNormals">0</param>
+            <param name="colorWithNormals">0</param>
+            <param name="referenceDataUid">data2</param>
+        </property>
+    </property>
+    <property name="DataLinks"/>
+    <property name="Display"/>
+</propertyfile>

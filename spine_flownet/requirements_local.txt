@@ -1,0 +1,12 @@
+pandas==1.2.4
+tqdm==4.61.1
+numpy==1.19.5
+scipy==1.6.3
+h5py==3.1.0
+itk==5.2.1.post1
+lib==3.0.0
+scikit_learn==0.24.2
+torch==1.9.1
+wandb==0.12.2
+matplotlib==3.4.3
+pyquaternion==0.9.9

@@ -1,0 +1,44 @@
+---
+version: 1
+
+kind: experiment
+
+tags: [experiment]
+
+build:
+  image: pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
+  build_steps:
+    - apt-get update
+    - apt install -y libgl1-mesa-glx
+    - apt-get install -y libglib2.0-0 libsm6 libxext6 libxrender-dev
+    - pip install -r requirements.txt
+    - wandb login b79150d26e52618b08c56a9aef76185e04aa8d6c
+
+environment:
+  resources:
+    cpu:
+      requests: 4
+      limits: 8
+    memory:
+      requests: 8192
+
+    gpu:
+      requests: 1
+      limits: 1
+
+declarations:
+  data_root: /data/RutgersCampProject/CampUSDb
+  config_file : config/pix2pix_config_semi_unpaired.yml
+  train_folders : 'convex_probe,CT_cropped_masked'
+  group_name: 'UnetSegmentation'
+  project_name: 'FlowNetSpine'
+  num_workers : 4
+
+run:
+  cmd:
+   - python -u train_pix2pix.py -c={{ config_file }} \
+                         --data_root={{ data_root }} \
+                         --group_name={{ group_name }} \
+                         --project_name={{ project_name }} \
+                         --num_workers={{ num_workers }} \
+                         --on_polyaxon

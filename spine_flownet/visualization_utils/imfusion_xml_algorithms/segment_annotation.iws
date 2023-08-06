@@ -1,0 +1,22 @@
+<property name="GlLine">
+    <param name="visible">1</param>
+    <param name="alwaysVisible">0</param>
+    <param name="editable">1</param>
+    <param name="color">1 1 0 1 </param>
+    <param name="lineWidth">1</param>
+    <param name="labelVisible">1</param>
+    <param name="labelDepthTest">1</param>
+    <param name="labelColor">0 1 1 </param>
+    <param name="labelText">270.10</param>
+    <param name="name">Line Segment</param>
+    <param name="points">-215.161016949153 -108.413793103448 0 27.5847457627119 10.0383141762452 0 </param>
+    <param name="pointSize">5</param>
+    <param name="maxPoints">2</param>
+    <param name="pointColor">1 1 0 1 </param>
+    <param name="labelPixelOffset">0 0 </param>
+    <param name="centeredText">0</param>
+    <param name="useLengthAsLabel">1</param>
+    <param name="colorGradientStart">0 0 0 </param>
+    <param name="colorGradientStop">0 0 0 </param>
+    <param name="useColorGradient">0</param>
+</property>

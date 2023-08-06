@@ -1,0 +1,48 @@
+<!--ImFusion Suite, 01.11.2021-->
+<propertyfile version="1.1">
+    <param name="workspaceVersion">16</param>
+    <property name="Datasets">
+        <property name="Data">
+            <param name="topDown">1</param>
+            <param name="name">%(USNAME)</param>
+            <param name="blockId">1</param>
+            <param name="original">1</param>
+            <param name="linkMPR">0</param>
+            <param name="hide3D">0</param>
+            <param name="uid">data0</param>
+            <property name="MetaData">
+                <param name="topDown">1</param>
+            </property>
+            <property name="Components"/>
+        </property>
+    </property>
+    <property name="Interface">
+        <param name="outputUids">"data0" </param>
+        <param name="inputUids"></param>
+    </property>
+    <property name="Algorithms">
+        <property name="ImFusionFile">
+            <param name="location">%(INPUTUS)</param>
+            <param name="name">%(USNAME)</param>
+            <param name="compressionMode">0</param>
+            <param name="passes">1</param>
+            <param name="dx">3</param>
+            <param name="dy">3</param>
+            <param name="ignoredDataComponentIds"></param>
+            <param name="blockId">-1</param>
+            <param name="execute">1</param>
+            <param name="inputUids"></param>
+            <param name="outputUids">"data0" </param>
+        </property>
+        <property name="2D Image Set">
+            <param name="location">%(OUTPUTPATH)</param>
+            <param name="skip">0</param>
+            <param name="execute">1</param>
+            <param name="inputUids">"data0" </param>
+            <param name="outputUids"></param>
+        </property>
+    </property>
+    <property name="Annotations"/>
+    <property name="DataLinks"/>
+    <property name="Display"/>
+</propertyfile>

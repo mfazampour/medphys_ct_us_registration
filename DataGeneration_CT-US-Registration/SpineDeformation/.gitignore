@@ -1,0 +1,10 @@
+.idea/
+__pycache__
+lastUsedGUI.ini
+runSofa.ini 
+*.vtu
+*.txt
+*.nii.gz
+*.log
+results/
+*.ini

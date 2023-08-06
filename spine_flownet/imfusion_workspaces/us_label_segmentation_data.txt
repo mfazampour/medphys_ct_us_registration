@@ -1,0 +1,2 @@
+USNAME;LABELNAME;INPUTLABEL;INPUTUS;OUTPUTPATH
+spine1_ts0_;spine1_ts0_label_;E:/NAS/jane_project/simulated_us_labelmaps\spine1\ts0_labelmap.imf;E:/NAS/jane_project/simulated_us\spine1\ts0.imf;E:/NAS/jane_project/segmentation_network_data/full_labels\train

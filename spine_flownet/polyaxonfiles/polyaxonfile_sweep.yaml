@@ -1,0 +1,47 @@
+---
+version: 1
+
+kind: experiment
+
+framework: pytorch
+
+tags:
+  - Full_Spine
+
+
+build:
+  image: "mfazampour/spine_flownet"
+  build_steps:
+    - "pip install matplotlib"
+    - "pip install pyquaternion"
+
+environment:
+  node_selector:
+    gpuMemory: "24"
+  resources:
+    cpu:
+      requests: 6
+      limits: 8
+    memory:
+      requests: 20000
+      limits: 32000
+    gpu:
+      requests: 1
+      limits: 1
+
+params:
+  dataset_path: '/data/Spine_Flownet/new_data_raycasted/'
+  wandb_key: d3424a60f5e39087781fde8ff973ee92dd6da70d
+  wandb_sweep_id: v6hbtd55
+  wandb_sweep_count: 10
+  epoch: 60
+  batch_size: 35
+
+run:
+    cmd: python train.py --dataset_path {{ dataset_path }} \
+          --wandb_key {{ wandb_key }} \
+          --wandb_sweep_id {{ wandb_sweep_id }} \
+          --wandb_sweep_count {{ wandb_sweep_count }} \
+          --epoch {{ epoch }} \
+          --batch_size {{ batch_size }} \
+          --use_raycasted_data

@@ -1,0 +1,27 @@
+program: train.py
+method: grid
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+  lr:
+    value: 0.001
+  loss:
+    values: ["mse", "mse,rigidity", "mse,biomechanical", "mse,rigidity,biomechanical"]
+  test_id:
+    values: [ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ]
+  dataset_path:
+    value: "/mnt/polyaxon/data1/Spine_Flownet/new_data_raycasted/"
+#    values: [ "/mnt/polyaxon/data1/Spine_Flownet/new_data_raycasted/","/mnt/polyaxon/data1/Spine_Flownet/new_data_us/" ]
+    #    value: "/mnt/polyaxon/data1/Spine_Flownet/new_data_raycasted_cpd_initialized/"
+  sweep_target_loss:
+    value: 'TRE'
+  coeff_rigidity:
+    value: 5.0
+  coeff_bio:
+    value: 0.5
+  coeff_chamfer:
+    value: 5.0
+  num_points:
+    value: 2048
+

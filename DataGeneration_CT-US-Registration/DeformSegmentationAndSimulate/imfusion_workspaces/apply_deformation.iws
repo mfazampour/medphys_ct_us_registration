@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<propertyfile version="1.1" name="" comment="Written by ImFusionLib, 2023-05-14 11:49:50">
+	<param name="workspaceVersion">23</param>
+	<property name="Datasets">
+		<property name="Data">
+			<param name="filename">%(INPUTIMAGE)</param>
+			<param name="name">verse504_cropped</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data0</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2846</param>
+						<param name="level">399</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues"/>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="topDown">1</param>
+			<param name="name">sub-verse504forcefield1_lumbar_deformedfield</param>
+			<param name="original">1</param>
+			<param name="uid">data1</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">8.03697633743286</param>
+						<param name="level">-0.719591379165649</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues"/>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="name">verse504_cropped 1</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data2</param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2846</param>
+						<param name="level">399</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues"/>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">2774</param>
+						<param name="level">363</param>
+						<param name="presetName">CT Bone</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.752941176470588 0.250980392156863 0.125490196078431 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.975 0.9 0.82 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.6 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">0.9 0.9 0.9 0.6 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+			</property>
+		</property>
+	</property>
+	<property name="Interface">
+		<param name="outputUids">"data0" "data1" "data2" </param>
+		<param name="inputUids"/>
+	</property>
+	<property name="Algorithms">
+		<property name="NIFTI File">
+			<param name="location">%(INPUTIMAGE)</param>
+			<param name="modality">0</param>
+			<param name="keepRasCoordinates">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids"/>
+			<param name="outputUids">"data0" </param>
+		</property>
+		<property name="MetaImage">
+			<param name="location">%(INPUTFIELD)</param>
+			<param name="multiFile">0</param>
+			<param name="unsigned">0</param>
+			<param name="compress">0</param>
+			<param name="ignoreHalfPixelOffset">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids"/>
+			<param name="outputUids">"data1" </param>
+		</property>
+		<property name="Attach Displacement Field">
+			<param name="execute">1</param>
+			<param name="inputUids">"data1" "data0" </param>
+			<param name="outputUids"/>
+		</property>
+		<property name="Apply Deformation">
+			<param name="nearestInterpolation">%(NEARESTINTERP)</param>
+			<param name="adjustSize">0</param>
+			<param name="useCPU">0</param>
+			<param name="samplerWrapping">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data0" </param>
+			<param name="outputUids">"data2" </param>
+		</property>
+		<property name="NIFTI File">
+			<param name="location">%(OUTPUTIMAGE)</param>
+			<param name="modality">0</param>
+			<param name="keepRasCoordinates">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids">"data2" </param>
+			<param name="outputUids"/>
+		</property>
+	</property>
+	<property name="Annotations"/>
+	<property name="DataLinks"/>
+	<property name="Display"/>
+</propertyfile>

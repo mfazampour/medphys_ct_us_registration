@@ -1,0 +1,9 @@
+/home/janelameski/thesis/lib/python3.6/site-packages/pointnet2-0.0.0-py3.6-linux-x86_64.egg/pointnet2_cuda.py
+/home/janelameski/thesis/lib/python3.6/site-packages/pointnet2-0.0.0-py3.6-linux-x86_64.egg/pointnet2_cuda.cpython-36m-x86_64-linux-gnu.so
+/home/janelameski/thesis/lib/python3.6/site-packages/pointnet2-0.0.0-py3.6-linux-x86_64.egg/__pycache__/pointnet2_cuda.cpython-36.pyc
+/home/janelameski/thesis/lib/python3.6/site-packages/pointnet2-0.0.0-py3.6-linux-x86_64.egg/EGG-INFO/top_level.txt
+/home/janelameski/thesis/lib/python3.6/site-packages/pointnet2-0.0.0-py3.6-linux-x86_64.egg/EGG-INFO/SOURCES.txt
+/home/janelameski/thesis/lib/python3.6/site-packages/pointnet2-0.0.0-py3.6-linux-x86_64.egg/EGG-INFO/PKG-INFO
+/home/janelameski/thesis/lib/python3.6/site-packages/pointnet2-0.0.0-py3.6-linux-x86_64.egg/EGG-INFO/not-zip-safe
+/home/janelameski/thesis/lib/python3.6/site-packages/pointnet2-0.0.0-py3.6-linux-x86_64.egg/EGG-INFO/native_libs.txt
+/home/janelameski/thesis/lib/python3.6/site-packages/pointnet2-0.0.0-py3.6-linux-x86_64.egg/EGG-INFO/dependency_links.txt
